@@ -1,0 +1,33 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - "*"  # Déclenche le workflow à chaque push sur toutes les branches
+  pull_request:
+    branches:
+      - main
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Utilise une machine Ubuntu pour l'exécution du workflow
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Action pour récupérer le code du dépôt
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2  # Action pour configurer Node.js
+      with:
+        node-version: '14'  # Version de Node.js à utiliser
+
+    - name: Install dependencies
+      run: npm install  # Installation des dépendances du projet
+
+    - name: Run tests
+      run: |
+        if [ -z "$(find ./tests -name '*.test.js')" ]; then
+          echo "Aucun test trouvé."
+        else
+          jest --passWithNoTests
+        fi
