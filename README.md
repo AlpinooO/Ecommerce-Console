@@ -3,8 +3,8 @@
 
 Collaborateur:
 
-<li>AlpinooO: Léo Malgonne = Responsable GitHub
-<li>Skullking: Mohamed Yanis Slimani = Développeur FrondBackEnd (CSS)
-<li>LucasR35: Lucas Rosier = Développeur JavaScript
-<li>Pmaioranool: Lucas Maiorano = Responsable CI/CD
-<li>Shunouu: Shun Mampuya = Développeur FrondBackEnd (HTML)
+- AlpinooO: Léo Malgonne = Responsable GitHub
+- Skullking: Mohamed Yanis Slimani = Développeur FrondBackEnd (HTML,CSS)
+- Shunouu: Shun Mampuya = Développeur FrontBackEnd (HTML, CSS)
+- LucasR35: Lucas Rosier = Développeur JavaScript
+- Pmaioranool: Lucas Maiorano = Responsable CI/CD
