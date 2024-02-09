@@ -1,0 +1,15 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - "*"  # Déclenche le workflow à chaque push sur toutes les branches
+  pull_request:
+    branches:
+      - main
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Utilise une machine Ubuntu pour l'exécution du workflow
+
+  
