@@ -12,4 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest  # Utilise une machine Ubuntu pour l'exécution du workflow
 
-  
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Action pour récupérer le code du dépôt
