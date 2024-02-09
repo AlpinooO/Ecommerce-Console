@@ -8,3 +8,4 @@ Collaborateur:
 - Shunouu: Shun Mampuya = Développeur FrontBackEnd (HTML, CSS)
 - LucasR35: Lucas Rosier = Développeur JavaScript
 - Pmaioranool: Lucas Maiorano = Responsable CI/CD
+- Pmaioranool: Lucas Maiorano = Responsable CI/CD
