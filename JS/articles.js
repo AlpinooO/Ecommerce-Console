@@ -30,3 +30,5 @@ let reponse = [
       prix: 10,
     },
   ];
+
+//les article du qui peuvent être mis dans le panier
