@@ -153,7 +153,6 @@ main article {
     height: 100vh; 
   }
   
-  /* Title block */
   #blocTitrePanier {
     display: flex;
     align-items: center; 
