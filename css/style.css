@@ -159,3 +159,62 @@ main article {
 .produits h3 {
     width: 100%; /* Assure que le paragraphe occupe toute la largeur */
 }
+#basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute items evenly with spacing */
+    height: 100vh; /* Fill the viewport height */
+  }
+  
+  /* Title block */
+  #blocTitrePanier {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the left */
+    height: 80px; /* Assuming size80 refers to height */
+    background-color: #f0f0f0; /* Add a background color for visibility */
+    padding: 20px; /* Add padding for content spacing */
+  }
+  
+  /* Basket items container */
+  #basket-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  /* Individual item */
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    width: 150px; /* Adjust width as needed */
+    margin: 10px; /* Add spacing around items */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    padding: 10px; /* Add padding for content spacing */
+  }
+  
+  .item img {
+    width: 100%; /* Ensure image takes full width */
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  /* Total price and checkout button */
+  #total-price, #checkout-button {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-end; /* Align to the right */
+    margin-bottom: 20px; /* Add spacing below */
+  }
+  
+  #checkout-button button {
+    padding: 10px 20px; /* Add padding for button size */
+    background-color: #007bff; /* Set a primary color for the button */
+    color: white; /* Set white text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickability */
+  }
