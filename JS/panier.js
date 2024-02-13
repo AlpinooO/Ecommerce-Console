@@ -3,7 +3,7 @@ let produitEnregistreDansLocalStorage = JSON.parse(localStorage.getItem("produit
 const positionElement3 = document.querySelector("#container-produits-panier");
 
 if (produitEnregistreDansLocalStorage === null || produitEnregistreDansLocalStorage.length === 0) {
-    const panierVide = `<div class="container-panier-vide">
+    const panierVide = `<div id="container-panier-vide">
                             <div> Le panier est vide </div>
                         </div>`;
     positionElement3.innerHTML = panierVide;
