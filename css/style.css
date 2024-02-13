@@ -1,4 +1,48 @@
-html {
-    display: flex;
-    flex-wrap: wrap;
+nav {
+    text-align: center;
+    background-color: #f2f2f2; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement à l'intérieur du conteneur */
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px; /* Marge entre les liens */
+    text-decoration: none; /* Supprimer soulignement des liens */
+    color: #333; /* Couleur du texte */
+}
+
+nav a:last-child {
+    float: right; /* Place le dernier lien tout à gauche */
+}
+footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur du footer */
+}
+
+.a-propos {
+    max-width: 600px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    background-color: #333;
+    color: #fff;
+    padding-inline: calc((100vw - 600px) / 2);
+}
+
+.a-propos h2 {
+    color: #fff; /* Couleur du titre */
+}
+
+.a-propos p {
+    margin-bottom: 10px; /* Espacement entre les paragraphes */
+    margin-bottom: 0px;
+}
+
+footer p {
+    text-align: center; /* Centre le texte */
+    margin-top: 20px; /* Espacement en haut du paragraphe */
+}
+body {
+    margin: 0; /* Retire les marges */
+    padding: 0; /* Retire les paddings */
 }
