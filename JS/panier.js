@@ -9,6 +9,8 @@ if (produitEnregistreDansLocalStorage === null || produitEnregistreDansLocalStor
     positionElement3.innerHTML = panierVide;
 } else {
     let structureProduitPanier = "";
+    let totalPanier = 0; // Nouvelle variable pour stocker le total
+
     for (let k = 0; k < produitEnregistreDansLocalStorage.length; k++) {
         structureProduitPanier += `
             <div class="container-recapitulatif">
@@ -18,7 +20,9 @@ if (produitEnregistreDansLocalStorage === null || produitEnregistreDansLocalStor
                 </div>
             </div>
         `;
+        totalPanier += parseFloat(produitEnregistreDansLocalStorage[k].prix); // Ajout du prix au total
     }
+
     positionElement3.innerHTML = structureProduitPanier;
 
     let btn_supprimer = document.querySelectorAll(".btn-supprimer");
@@ -33,6 +37,10 @@ if (produitEnregistreDansLocalStorage === null || produitEnregistreDansLocalStor
             window.location.href = "panier.html";
         });
     }
+
+    // Ajout du total au HTML
+    const totalHtml = `<div class="total-panier">Total : ${totalPanier} €</div>`;
+    positionElement3.insertAdjacentHTML("beforeend", totalHtml);
 }
 
 const btn_tous_supprimer_panier_html = `
@@ -40,7 +48,7 @@ const btn_tous_supprimer_panier_html = `
 `;
 
 positionElement3.insertAdjacentHTML("beforeend", btn_tous_supprimer_panier_html);
-git 
+
 const btn_tous_supprimer_panier = document.querySelector(".btn-tous-supprimer-panier");
 
 btn_tous_supprimer_panier.addEventListener("click", (e) => {
@@ -49,6 +57,7 @@ btn_tous_supprimer_panier.addEventListener("click", (e) => {
     alert("Le panier a été vidé");
     window.location.href = "panier.html";
 });
+
 
 
 
