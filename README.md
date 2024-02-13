@@ -1,23 +1,39 @@
 # E-commerce-Console
 
 
-Collaborateur:
+# Collaborateur:
 
 - AlpinooO: Léo Malgonne = Responsable GitHub
 - Skullking: Mohamed Yanis Slimani = Développeur FrondBackEnd (HTML,CSS)
 - Shunouu: Shun Mampuya = Développeur FrontBackEnd (HTML, CSS)
 - LucasR35: Lucas Rosier = Développeur JavaScript
 - Pmaioranool: Lucas Maiorano = Responsable CI/CD
-- Pmaioranool: Lucas Maiorano = Responsable CI/CD
 
+
+
+# Documentation du site pour l'utilisateur
+
+- Design simple, attrayant.
+- Le site est intruitif, facile à se reperer.
+- Les descriptions des articles sont disponible, l'utilisateur saura quoi acheter.
+- Vous pouvez mettre les articles dans le panier et payer.
+
+# Type de code:
+- HTML
+- CSS
+- JavaScript
+
+
+# Description des différents types de ficher
 
 HTML:
 
 - Index
-Fichier de l'écran d'acceuil, avec de multiples catégories
+Fichier de l'écran d'accueil, avec de multiples catégories
 
 - Fichier avec nom de consoles:
-Les multiples fichiers sont utilisé pour les catégories des consoles, par exemple si nous cliquont sur "Nintendo", on verra la rubrique "Nintendo", de même pour "Playstation" ou "Xbox".
+Les multiples fichiers sont utilisés pour les catégories des consoles, par exemple si nous cliquons sur "Nintendo", on verra la rubrique "Nintendo", de même pour "Playstation" ou "Xbox".
+Chaque console à ensuite une page HTML à elle même.
 
 JavaScript:
 
@@ -29,4 +45,23 @@ De la ligne 1 à 9, elle sert a dire si le panier est vide ou pas et cela peut a
 Nous avons en complément la fonction de tout supprimer (ligne 38 à 51) qui permet comme dit de supprimer tout les articles du panier.
 
 
-et de la ligne 58 à 101, nous avons les différentes fonctions d'enregistrement lorsque l'on appuie sur "ajouter le pannier" et mettre les articles dans le panier.
+Et de la ligne 58 à 101, nous avons les différentes fonctions d'enregistrement lorsque l'on appuie sur "ajouter le pannier" et mettre les articles dans le panier.
+
+CSS:
+- Style.css
+Il y a le header, nav, footer et main. Nous avons aussi différentes class qui permettent de mieux cadrer les images et les redimensionner.
+
+De plus, de la ligne 89 à 92, nous nottons que lorsque l'on ajoute un article, il s'adapte en fonction et évite de dépasser.
+
+
+Workflow:
+De la ligne 3 a 9, cela fait différent push/pull.
+
+Dans jobs:
+De la ligne 12 a 14, cela met sur la dernière version d'ubuntu.
+
+De 15 à 17, ça vérifie les repository.
+
+De 19 à 29, ça fait les test.
+
+
