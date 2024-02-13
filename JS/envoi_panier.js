@@ -7,13 +7,7 @@ const idProduitSelectionner = reponse.find((element) => element._id === id);
 
 const btn_envoyerPanier = document.querySelectorAll("#btn-envoyer");
 
-btn_envoyerPanier.forEach((button) => {
-  button.addEventListener("click", () => {
-    let newUrl = button.attributes["0"].nodeValue;
 
-    window.location.href = newUrl;
-  });
-});
 
 btn_envoyerPanier.forEach((button) => {
   button.addEventListener("click", () => {
