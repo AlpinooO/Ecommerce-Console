@@ -1,3 +1,6 @@
+header {
+    text-align: center;
+}
 nav {
     text-align: center;
     background-color: #f2f2f2; /* Couleur de fond */
@@ -20,7 +23,9 @@ footer {
     color: #fff; /* Couleur du texte */
     padding: 20px; /* Espacement intérieur du footer */
 }
-
+h2 {
+    text-align: center;
+}
 .a-propos {
     max-width: 600px; /* Largeur maximale du contenu */
     margin: 0 auto; /* Centre le contenu horizontalement */
@@ -45,4 +50,112 @@ footer p {
 body {
     margin: 0; /* Retire les marges */
     padding: 0; /* Retire les paddings */
+}
+/* Création de la grille pour les articles */
+article {
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne */
+    grid-template-rows: auto auto; /* Deux lignes, ajustées à la hauteur du contenu */
+    grid-gap: 10px; /* Espacement entre les éléments */
+    text-align: center; /* Centre le contenu des articles */
+}
+
+/* Ajustement de l'image dans la première ligne */
+article img {
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas de leurs conteneurs */
+    grid-row: 1; /* Place l'image dans la première ligne */
+}
+
+/* Ajustement du texte dans la deuxième ligne */
+article p {
+    margin: 0; /* Réinitialise les marges par défaut */
+    grid-row: 2; /* Place le texte dans la deuxième ligne */
+}
+/* Ajustement de l'image dans la première ligne */
+article img {
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas de leurs conteneurs */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    object-fit: cover; /* Ajuste la taille de l'image pour couvrir le conteneur tout en conservant ses proportions */
+    grid-row: 1; /* Place l'image dans la première ligne */
+}
+
+/* Target all articles within the `main` section */
+main article {
+    /* Display as inline-block elements to form a grid */
+    display: inline-block;
+  
+    /* Set equal width for each article (adjust as needed) */
+    width: 23.75%; /* 100% divided by 4 columns */
+    margin: 1.25%; /* Adjust spacing as needed */
+  
+    /* Text styles for clarity and readability */
+    text-align: center;
+    font-family: sans-serif; /* Choose your preferred font family */
+    color: #333; /* Adjust text color */
+  }
+  
+  /* Ensure articles span only 2 rows instead of 4 */
+  main article:nth-child(5n+1),
+  main article:nth-child(5n+2),
+  main article:nth-child(5n+3),
+  main article:nth-child(5n+4) {
+    clear: none; /* Prevent clearing after every 4th article */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    main article {
+      /* Switch to 2 columns instead of 4 on narrow screens */
+      width: 47.5%; /* 100% divided by 2 columns */
+    }
+  
+    /* Clear after every 2nd article to maintain 2 rows */
+    main article:nth-child(3n+1),
+    main article:nth-child(3n+2) {
+      clear: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Switch to 1 column on very narrow screens */
+    main article {
+      width: 100%;
+    }
+  
+    /* Clear after every article to prevent gaps */
+    main article {
+      clear: none;
+    }
+  }
+  .Plateforme {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    grid-gap: 20px; /* Espacement entre les éléments */
+    justify-items: center; /* Centre les éléments horizontalement */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    max-width: 900px; /* Optionnel : Limite la largeur maximale du conteneur */
+}
+
+  p {
+    text-align: center;
+  }
+  .produits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produits img {
+    margin-right: 20px; /* Ajustez la marge selon vos besoins */
+    height: 725px;
+    width: 725px;
+}
+
+.produits h2 {
+    flex: 1; /* Permet au titre de prendre l'espace restant */
+    margin-right: 20px;
+}
+
+.produits h3 {
+    width: 100%; /* Assure que le paragraphe occupe toute la largeur */
 }
