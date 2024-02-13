@@ -3,113 +3,101 @@ header {
 }
 nav {
     text-align: center;
-    background-color: #f2f2f2; /* Couleur de fond */
-    border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espacement à l'intérieur du conteneur */
+    background-color: #f2f2f2; 
+    border-radius: 10px; 
+    padding: 20px; 
 }
 
 nav a {
     display: inline-block;
-    margin: 0 10px; /* Marge entre les liens */
-    text-decoration: none; /* Supprimer soulignement des liens */
-    color: #333; /* Couleur du texte */
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #333; 
 }
 
 nav a:last-child {
-    float: right; /* Place le dernier lien tout à gauche */
+    float: right; 
 }
 footer {
-    background-color: #333; /* Couleur de fond du footer */
-    color: #fff; /* Couleur du texte */
-    padding: 20px; /* Espacement intérieur du footer */
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
 }
 h2 {
     text-align: center;
 }
 .a-propos {
-    max-width: 600px; /* Largeur maximale du contenu */
-    margin: 0 auto; /* Centre le contenu horizontalement */
+    max-width: 600px; 
+    margin: 0 auto; 
     background-color: #333;
     color: #fff;
     padding-inline: calc((100vw - 600px) / 2);
 }
 
 .a-propos h2 {
-    color: #fff; /* Couleur du titre */
+    color: #fff; 
 }
 
 .a-propos p {
-    margin-bottom: 10px; /* Espacement entre les paragraphes */
+    margin-bottom: 10px; 
     margin-bottom: 0px;
 }
 
 footer p {
-    text-align: center; /* Centre le texte */
-    margin-top: 20px; /* Espacement en haut du paragraphe */
+    text-align: center; 
+    margin-top: 20px; 
 }
 body {
-    margin: 0; /* Retire les marges */
-    padding: 0; /* Retire les paddings */
+    margin: 0; 
+    padding: 0; 
 }
-/* Création de la grille pour les articles */
+
 article {
     display: grid;
-    grid-template-columns: 1fr; /* Une seule colonne */
-    grid-template-rows: auto auto; /* Deux lignes, ajustées à la hauteur du contenu */
-    grid-gap: 10px; /* Espacement entre les éléments */
-    text-align: center; /* Centre le contenu des articles */
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+    grid-gap: 10px; 
+    text-align: center; 
 }
 
-/* Ajustement de l'image dans la première ligne */
+
 article img {
-    max-width: 100%; /* Assurez-vous que les images ne dépassent pas de leurs conteneurs */
-    grid-row: 1; /* Place l'image dans la première ligne */
+    max-width: 100%; 
+    grid-row: 1; 
 }
 
-/* Ajustement du texte dans la deuxième ligne */
 article p {
-    margin: 0; /* Réinitialise les marges par défaut */
-    grid-row: 2; /* Place le texte dans la deuxième ligne */
+    margin: 0; 
+    grid-row: 2; 
 }
-/* Ajustement de l'image dans la première ligne */
 article img {
-    max-width: 100%; /* Assurez-vous que les images ne dépassent pas de leurs conteneurs */
-    height: 200px; /* Hauteur fixe pour toutes les images */
-    object-fit: cover; /* Ajuste la taille de l'image pour couvrir le conteneur tout en conservant ses proportions */
-    grid-row: 1; /* Place l'image dans la première ligne */
+    max-width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    grid-row: 1; 
 }
 
-/* Target all articles within the `main` section */
 main article {
-    /* Display as inline-block elements to form a grid */
     display: inline-block;
-  
-    /* Set equal width for each article (adjust as needed) */
-    width: 23.75%; /* 100% divided by 4 columns */
-    margin: 1.25%; /* Adjust spacing as needed */
-  
-    /* Text styles for clarity and readability */
+    width: 23.75%;
+    margin: 1.25%;
     text-align: center;
-    font-family: sans-serif; /* Choose your preferred font family */
-    color: #333; /* Adjust text color */
+    font-family: sans-serif;
+    color: #333; 
   }
   
-  /* Ensure articles span only 2 rows instead of 4 */
   main article:nth-child(5n+1),
   main article:nth-child(5n+2),
   main article:nth-child(5n+3),
   main article:nth-child(5n+4) {
-    clear: none; /* Prevent clearing after every 4th article */
+    clear: none;
   }
   
-  /* Responsive adjustments for smaller screens */
   @media (max-width: 768px) {
     main article {
-      /* Switch to 2 columns instead of 4 on narrow screens */
-      width: 47.5%; /* 100% divided by 2 columns */
+      width: 47.5%; 
     }
   
-    /* Clear after every 2nd article to maintain 2 rows */
     main article:nth-child(3n+1),
     main article:nth-child(3n+2) {
       clear: none;
@@ -117,23 +105,21 @@ main article {
   }
   
   @media (max-width: 480px) {
-    /* Switch to 1 column on very narrow screens */
     main article {
       width: 100%;
     }
   
-    /* Clear after every article to prevent gaps */
     main article {
       clear: none;
     }
   }
   .Plateforme {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
-    grid-gap: 20px; /* Espacement entre les éléments */
-    justify-items: center; /* Centre les éléments horizontalement */
-    margin: 0 auto; /* Centre le conteneur horizontalement */
-    max-width: 900px; /* Optionnel : Limite la largeur maximale du conteneur */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 0 auto; 
+    max-width: 900px; 
 }
 
   p {
@@ -146,75 +132,71 @@ main article {
 }
 
 .produits img {
-    margin-right: 20px; /* Ajustez la marge selon vos besoins */
+    margin-right: 20px; 
     height: 725px;
     width: 725px;
 }
 
 .produits h2 {
-    flex: 1; /* Permet au titre de prendre l'espace restant */
+    flex: 1;
     margin-right: 20px;
 }
 
 .produits h3 {
-    width: 100%; /* Assure que le paragraphe occupe toute la largeur */
+    width: 100%; 
 }
 #basket {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute items evenly with spacing */
-    height: 100vh; /* Fill the viewport height */
+    align-items: center; 
+    justify-content: space-between;
+    height: 100vh; 
   }
   
   /* Title block */
   #blocTitrePanier {
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: flex-start; /* Align content to the left */
-    height: 80px; /* Assuming size80 refers to height */
-    background-color: #f0f0f0; /* Add a background color for visibility */
-    padding: 20px; /* Add padding for content spacing */
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 80px; 
+    background-color: #f0f0f0; 
+    padding: 20px;
   }
-  
-  /* Basket items container */
   #basket-items {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Add spacing between items */
+    align-items: center; 
+    gap: 20px; 
   }
   
-  /* Individual item */
   .item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content vertically */
-    width: 150px; /* Adjust width as needed */
-    margin: 10px; /* Add spacing around items */
-    border: 1px solid #ccc; /* Add a border for visual separation */
-    padding: 10px; /* Add padding for content spacing */
+    align-items: center;
+    width: 150px;
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
   }
   
   .item img {
-    width: 100%; /* Ensure image takes full width */
-    height: 150px; /* Adjust height as needed */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
   }
   
-  /* Total price and checkout button */
   #total-price, #checkout-button {
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: flex-end; /* Align to the right */
-    margin-bottom: 20px; /* Add spacing below */
+    align-items: center; 
+    justify-content: flex-end; 
+    margin-bottom: 20px; 
   }
   
   #checkout-button button {
-    padding: 10px 20px; /* Add padding for button size */
-    background-color: #007bff; /* Set a primary color for the button */
-    color: white; /* Set white text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Indicate clickability */
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
   }
